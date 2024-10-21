@@ -3,8 +3,9 @@
 <html>
 <head>
 <title> Templates </title>
+
  <link rel="icon" type="image/png" href="Circlecrop.png">
-<style>
+    <style>
 
 body {
             background-image: url('Balwarte.jpg');
@@ -92,6 +93,7 @@ image-align: left;
             textarea.value = dropdown.value;
         }
     </script>
+
 </head>
 <body>
 <body>
@@ -105,22 +107,46 @@ image-align: left;
 <h4 style="color:white;">Raymond T.</h4>
     <select id="dropdown" onchange="updateTextareas()">
 <option value="Please note anything here....">60MC Restart Note</option>
-     <option value="Hi! This is Raymond from Adapthealth and its family of companies on a recorded line. 
--This message is for [NAME OF THE PATIENT] 
--We are reaching out regarding the renewal of your medical equipment. 
--Your doctor has already signed and submitted all the necessary documents for this process. Please call us back at 484-567-0666x2.
+      <option value="Hi! This is Raymond from Adapthealth and its family of companies on a recorded line.
+ Hello This message is for [NAME OF THE PATIENT] 
+
+We’re reaching out regarding the renewal of your medical equipment. We received all the documents that we need from your doctor. Please call us back at 484-567-0666.
 -------------------------------------------------------------------------------
 [HIPAA]
 -For security and HIPAA compliance, could you please confirm your date of birth before we proceed.
+-Are you authorized to speak and make decisions on behalf of the patient?
+-------------------------------------------------------------------------------
+DUE
+Since we have all the necessary documents from the patient's doctor and this is due for the 5-Year Requalification, we need the patient to sign a new 5-year contract if the patient wants to continue with our services, and we can also provide a replacement if the patient requested for it.
+
+FUTURE
+Since we have all the necessary documents from the patient's doctor and their 5-year mark is on DATE, we need the patient to sign a new 5-year contract on or after that date, and we can also provide a replacement if the patient requested for it.
+-------------------------------------------------------------------------------
+*** INFORMATION THAT WE NEED!
+- Schedule date
+- Address
+- Phone number
+- IF THE PATIENT ASK FOR A TIME - I am not allowed to provide a specific time or estimated time of arrival because we are only taking care for oxygen documentation and setting up this appointment. Only our technician or local branch can answer that question. Instead, could you let me know which day of the week you will be available all day?
+-------------------------------------------------------------------------------
+[HIPAA-2]
 -Verifying your information helps us ensure your privacy and comply with HIPAA regulations.
 - I’m unable to proceed without verifying your information, I understand that you are uncomfortable providing this information over the phone, you can call the local office instead.
 -------------------------------------------------------------------------------
- Attempt #1, 10/21/2024">Voicemail</option>
+ Attempt #1, 10/11/2024 [Routed to VM]
+ Attempt #2, 10/11/2024 [Routed to VM]
+ Attempt #3, 10/11/2024 [Routed to VM]
+-------------------------------------------------------------------------------
+REBUTTAL: [Patient wants to keep the oxygen equipment]
+I'm glad to hear that the oxygen equipment is working well. All we need now is for you to sign the 60-month letter confirming that you will continue with our services. By signing this document, your insurance will cover the oxygen equipment you will be using.
+-------------------------------------------------------------------------------
+REBUTTAL: [Patient refuses to sign the 60month letter]
+If you choose not to sign the 60-month letter, you will be responsible for all costs related to its supplies and maintenance.
+
+">Voicemail</option>
 
   <option value="AA Medical - Thursday only">Branch Schedule Delivery</option>
 
 
- <option value="AA Medical - Thursday only">Restarted, but too soon</option>
 
 
 
@@ -705,8 +731,7 @@ When everything is double checked, pls CALL THE DOCTORS OFFICE and verify all th
 Once verified, send an email to Gabriel Cuevas to add Dr on Brightree. See sample below.">Mailbox if full</option>
 
 
-<option value="[Scheduling-Attempt/s#1] Called P#NUMBER. R
-, LVM. The mailbox is full and cannot accept any messages at this time.">Adding Doctor in Brightree</option>
+<option value="[Scheduling-Attempt/s#1] Called P#NUMBER. RVM, LVM. The mailbox is full and cannot accept any messages at this time.">Adding Doctor in Brightree</option>
 
  <option value="[Scheduling-Attempt/s#1] Called P#NUMBER, mailbox is not set up yet.">Mailbox is not yet set up</option>
 
@@ -714,7 +739,7 @@ Once verified, send an email to Gabriel Cuevas to add Dr on Brightree. See sampl
 
  <option value="[Scheduling] The account has been reset, and we have received the delivery, pickup tickets, and the 60-month letter; however, the work in progress remains flagged for TPE Audit Review.">TPE Audit Review</option>
 
-<option value="[Scheduling] The account has been reset, and we have received the delivery, pickup tickets, and the 60-month letter.">Restarted</option>
+<option value="[Scheduling] 5-Year Requalification completed, we have received the delivery, pickup tickets, and the 60-month letter.">2.7 - Delivered / Restarted</option>
 
 <option value="AP INTERPRETATIONS: (Non-Medicare) Everyone
  
@@ -728,31 +753,36 @@ d. If 1-9999 = with allowable charge but the modifier is MS (meaning maintenance
  <option value="What's needed: Scheduling/ 60 Month Restart
 | RUL: 
 | SWO Expiration: 
+| Signed date: 
 | Item/s: E1390 & 
 | Comment/s:
 We got valid testing and received signed SWO by CODE. 
 Instructed not to log Medicare.
 Created New Sales Order - CODE.
 New Pickup/Exchange - CODE.
-SB flipped to Restart Scheduled.">Medicare Scheduling</option>
+SB flipped to Restart Scheduled.">1.4 Medicare Scheduling</option>
  <option value="What's needed: Scheduling/ 60 Month Restart
 | RUL: 
 | CMN Expiration: 
+| Signed date: 
 | Item/s: E1390 & 
 | Comment/s:
 We got valid testing and received signed CMN by CODE. 
 Logged CMN.
 Created New Sales Order - CODE.
 New Pickup/Exchange - CODE.
-SB flipped to Restart Scheduled.">Non-Medicare Scheduling</option>
+SB flipped to Restart Scheduled.">1.4 Non-Medicare Scheduling</option>
 
- <option value="Hello Good day, @NAME
+ <option value="5-Year Requalification
+
+Hi [Recipient's Name],
 
 I would like to inquire if you could assist a patient living at CODE
 
-The patient is scheduled for a 5-year requalification. After discussing with her, she has agreed to continue with our services. She chose to retain her equipment at this time but has agreed to sign the necessary documents, which she requested be mailed to her. The documents have been attached to this email.
+We are currently working on the 5-Year requalification process. We contacted the patient, and she confirmed that she will continue with our services. She has declined a replacement at this time, but she is willing to sign the document but prefers to receive it via mail. I've attached the documents as well. 
 
 Your attention to this matter would be greatly appreciated. Hope you can look into this. Thanks ahead!
+
 
 STLukes
 PATIENTS INFO
@@ -760,16 +790,16 @@ PATIENTS INFO
 Sales order - CODE
 Pickup/Exchange - CODE">MAIL OUT THE DOCUMENTS</option>
 
- <option value="[Scheduling] Prior Authorization Number is missing, we have updated the information and assigned it to CSR, Authorization for PRIOR AUTH. Once the authorization process is complete, we will contact the patient for the pick-up and exchange. Updated the PAR workflow to 1-Need Authorization.">.3.4 - Need Prior Authorization</option>
+ <option value="[Scheduling] Prior Authorization Number is missing. Once the authorization process is complete, we will contact the patient for the pick-up and exchange. ">.3.4 - Need Prior Authorization</option>
 
  <option value="[Scheduling] The insurance policy has been updated to reflect the correct payer’s name, as verified through the Humana Lookup.">Insurance Change - Humana Lookup</option>
 
- <option value="[Scheduling] An error occurred [CODE]. The insurance policy now reflects the correct payer's jurisdiction.</option>
+
 
  <option value="[Scheduling] All required documents, including the DT, PU, and 60-month letter, have been received. I uploaded it to the system and attached to the corresponding sales order. The sales order has been updated to reflect a status of 'Delivered' and a WIP State of '2.7 Delivered.">DOCUSIGN RECEIVED</option>
 
 
- <option value="9/18/2024 - Rekey to show the rental equipment the patient has. 
+ <option value="10/11/2024 - Rekey to show the rental equipment the patient has. 
 
 ------------------------------------------------------------
 REKEYED SO#CODE: Rekey to show the rental equipment the patient has.
@@ -834,9 +864,20 @@ Declined for a replacement but have the patient sign the [DT#CODE], [Pickup/Exch
 
 This is required for insurance billing. If necessary, assist the patient in setting up Autopay. For any queries, please call 484-567-0666. 2 Liter- flow.">Scheduled for signing</option>
 
- <option value="5-year RUL is not due until the DATE. Please do not schedule it until then.
+ <option value="5-YR RUL is not due until the DATE. Please do not schedule it until then.
 
-2LPM via NC Continuous / 60Month Restart">Order and Delivery Note</option>
+2LPM via NC Continuous / 60Month Restart
+---------------------------------------------------------------------------------
+Please have patient sign 60-month letter when completing exchange/restart located in OTL.
+---------------------------------------------------------------------------------
+CLAIM NOTE
+
+RUL MET E1390 INITIAL 05032019
+---------------------------------------------------------------------------------
+CSR, Scheduling
+---------------------------------------------------------------------------------
+
+">Order, Delivery and Claim Note</option>
 
  <option value="5-YEAR RESET, please do not remove any items in the order.
 P#CODE. Contact them in advance and provide an ETA when calling.
@@ -874,7 +915,10 @@ Have the patient sign the [DT#CODE], Pickup/Exchange#CODE], and the 60 Month Res
 BL-K0738
 BL-E1392
 OXY PORTABILITY
-BL-E0443">USAGE</option>
+BL-E0443
+
+2LPM Oxygen Via NC At rest
+2LPM Oxygen Via NC with exertion">USAGE</option>
 
  <option value="5-YEAR RESET, please do not remove any items in the order.
 
@@ -898,51 +942,59 @@ Ensure the patient signs the document [DT#CODE], [Pickup/Exchange#CODE], and 60-
 
 Set up PT for Autopay if needed. Call 484-567-0666 with questions. 2 Liter-flow.">Blind delivery - Scheduled for drive by</option>
 
-
-
- <option value="5-YEAR RESET, please do not remove any items in the order.
-
-This is scheduled for blind delivery as we were not able to get ahold of the patient after multiple attempts. Please verify number from OTL. Please proceed to the address even if the patient does not answer the phone.
-
-Regardless of whether the patient accepts the replacement, please ensure the patient signs the document. [DT#CODE], [Pickup/Exchange#CODE] and 60-month letter so that we can bill Medicare. If the patient declines to sign, please contact us via phone or email.
-
-Please contact/set up PT for Autopay if needed. Call 484-567-0666 if you have any questions. 2 Liter- flow.
-
-">ZZZBlind delivery - Unsuccessful attempts</option>
-
- <option value="9/18/2024 - Please leave in Letter sent if you want the order to CTP. If patient calls and wants to continue service move to ARP= Branch Review Issue resolved.">CTP</option>
- <option value=" This patient is currently being reviewed by the Centralized RUL team.  If the patient calls in with any questions please transfer them to (484) 567-0666 or Purecloud call queue MedicareRestarts_adapthealth.  You can also email this team, 60monthrestarts@adapthealth.com for a status update.  
+ <option value="This patient is currently being reviewed by the Centralized RUL team.  If the patient calls in with any questions please transfer them to (484) 567-0666 or Purecloud call queue MedicareRestarts_adapthealth.  You can also email this team, 60monthrestarts@adapthealth.com for a status update.  
 
 Patient has had Oxygen equipment for 60 months. If patient elects to not restart all oxygen equipment will need to be picked up and the patient will have to switch providers.  
-***************** RUL Date DATE*****************
+************************************************* RUL DATE ********************************************************
 
-Assessment Team Review: Qualified
+Assessment Team Review: Q
 
-Testing: 
+Does the insurance cap?
+
+Testing:
+
+- RA @ rest
+- RA ambulation
+- Ambulation on O2
+- Nocturnal 
+- LPM
+
+Date Testing was completed:  
+    
+Comments:  
+
+
+VERIFY  
+
+Type of Usage (24hrs/ nocturnal only/ ambulation):    
+
 Current ordering doctor: 
-NPI: 
-Phone Number: 
-Fax Number: 
-GoScript: Yes No
-Parachute: Yes No
-DNC/DNF: Yes No
-Type of Usage: 2LPM via NC Continuous/Nocturnal
 
-Most recent/upcoming appt date to discuss O2 usage: 
+Most recent/upcoming appt date to discuss O2 usage:   
 
-Same/Sim Results -
- 
+Sam/Sim Results- 
+
 E1390: 
 
 Portability: 
 
+Pap: 
 
-| Comments:">First Touch</option>
+Final Review- 
+
+Was a new initial CMN created? Y/N 
+
+Was the Clinical tab completed?
+
+What is needed?
+
+ 
+">First Touch</option>
  <option value="Good day,
 
-The patient is due for their 60-month Oxygen Recertification. Kindly complete the CMN, 
-please ensure that the dates and signature should be in the same format. 
-Please fax it back to (484) 362-1480 at your earliest convenience.
+The patient is due for their 60-month Oxygen Recertification. Kindly complete the CMN, please ensure that the dates and signature should be in the same format. 
+
+Please have DOCTOR sign and fax it back to (484) 362-1480 at your earliest convenience.
 
 Feel free to call us at (484) 567-0666 if you have any questions. 
 Thank you for your prompt attention!
@@ -950,25 +1002,31 @@ Thank you for your prompt attention!
 ----------------------------------------------------------
 From: Tariao, Raymond 
 Phone: (484) 567-0666 
-Fax: (484) 362-1480">SWO Template</option>
+Fax: (484) 362-1480
+
+Phone: 4845670666 
+Fax: 4843621480">SWO Template</option>
 
  <option value="IMPORTANT!
 
 The answer keys are located on the back of the sheet. We kindly request that the doctor accurately and completely fill out the form for insurance billing purposes on behalf of the patient, please ensure that the dates and signature should be in the same format. 
 
-Once completed, lease fax it back to (484) 362-1480 at your earliest convenience.
-If you have any questions, feel free to call us at (484) 567-0666. Thank you!
+Please have DOCTOR sign and fax it back to (484) 362-1480 at your earliest convenience.
+
+Feel free to call us at (484) 567-0666 if you have any questions. 
+Thank you for your prompt attention!
 
 ----------------------------------------------------------
 From: Tariao, Raymond 
 Phone: (484) 567-0666 
 Fax: (484) 362-1480
 
-">CMN Template</option>
+Phone: 4845670666 
+Fax: 4843621480">CMN Template</option>
 
  <option value=" Microsoft account
 Username: raymond.tariao@adapthealth.com
-Password: MVSu0XdzC!!!
+Password: 
 
 PC Account
 
@@ -980,7 +1038,7 @@ Password:
 
 SSS
 Email: ramontariao@gmail.com
-Password: "> SSS & PAGIBIG Accounts</option>
+Password: 8uxvhMF4"> SSS & PAGIBIG Accounts</option>
 
  <option value="Hi Candice, Good morning! 
 
@@ -988,7 +1046,7 @@ The patient is undergoing a 5-year O2 restart, and we need to deliver replacemen
 
 Your attention to this matter is greatly appreciated. Thank you!">Transition but no BT</option>
 
- <option value="The patient has a new address, which is CODE. After checking the Adapthealth location system and delivery tickets, I determined that the restart should be processed in STL/OHH/Aerocare. Transferred all the documents accordingly. 9/18/2024 - Rekey to show the rental equipment the patient has.">Transition to another BT</option>
+ <option value="The patient has a new address, which is CODE. After checking the Adapthealth location system and delivery tickets, I determined that the restart should be processed in STL/OHH/Aerocare. Transferred all the documents accordingly. 10/11/2024 - Rekey to show the rental equipment the patient has.">Transition to another BT</option>
 
  <option value="When a patient is hesitant to verify information for HIPAA compliance, it's important to handle the situation with sensitivity and clarity. Here are some rebuttals that can help:
 
@@ -1030,7 +1088,7 @@ Switch their O2 and have the patient sign the [DT#CODE], [Pickup/Exchange#CODE],
 This is required for insurance billing. If necessary, assist the patient in setting up Autopay. For any queries, please call 484-567-0666. 2 Liter- flow.">Delivery today, no ETA</option>
 
 <option value="PLEASE ADD HCPCS">HCPCS</option>
-<option value="PLEASE ADD RUL MET HCPC CODE, then Initial date">CLAIM NOTE</option>
+<option value="PLEASE ADD RUL MET HCPC CODE, then Initial date">ZZZCLAIM NOTE</option>
 <option value="PARACHUTE:
 
 Illinois - Midwest
@@ -1063,7 +1121,15 @@ The results of this testing must be documented in the patient’s chart along wi
 <option value="Good day! Just checking in on this order. We require a signed document to continue with the patient’s 5-year O2 requalification. Thank you and have a great day!">CMN Follow-up</option>
 
 
-<option value="[Scheduling] The account is on hold, sent an email to CODE, will update once got a response from them.">Account is on hold</option>
+<option value="Hi James, Good day! 
+
+I hope this message finds you well.
+
+We would like to inquire if you could assist a patient living at CODE. We are working on the 5-year requalification for this account, which is currently on hold. Could you please advise if we should proceed with creating the order for the requalification setup or send the account for branch review to address the hold?
+
+Your prompt attention to this matter would be greatly appreciated.
+
+Thank you and have a great day!">Account is on hold</option>
 
 <option value="Hello Good day, Candice!
 
@@ -1103,6 +1169,34 @@ WV Lewisburg WEC-62548
 WV Parkersburg WEC-62549
 WVSouthCharlestonWEC62550
 Vitacare LLC - Norman, Oklahoma
+
+[Update by Tim - 9/20/2024 around 9:40AM]
+Aerocare - They are handling  their own scheduling
+Wi New Berlin
+Wi Waukesha 
+Wi Racine
+
+[Update by Ray - 9/24/2024 around 10:32AM]
+Aerocare - They are handling  their own scheduling
+Wi Fort Atkinson
+
+[Update by Ray during scheduler meeting - 9/24/2024 around 10:32AM]
+All North Carolina states are handling  their own scheduling.
+
+[Update by Tim 10/11/2024 around 11:37AM]
+These branches are handling their own scheduling.
+
+ALL We Care Medical (WEC) Branches
+AR Bentonville
+AR Russellville
+AR Springdale
+SC Walterboro 
+TN Kingsport
+WI New Berlin
+WI Waukesha
+WI Fort Atkinson
+WI Racine
+
 ">Not For US</option>
 <option value="PLEASE READ BELOW CAREFULLY:
 
@@ -1120,7 +1214,8 @@ Everyone, We have to send a e-mail to 61502@adapthealth.com for all Walterboro, 
 
 Transition from STL to Aerocare
 This patient is currently undergoing a 5-year O2 restart with us, and we were trying to deliver a replacement equipment for them. They have just moved from TN to TX (with Tyler being the nearest location to them). They were initially set up in Aerocare and we were wondering if you could help with getting them established in StLukes, since they currently do not have a patient account within that system. Hope you can look into this. Thanks ahead!">PLEASE READ BELOW CAREFULLY</option>
-<option value="[Scheduling Cleanup Project] The Sales Order - CODE has been voided and a new sales order CODE has been created to clear it from the aged accounts. No additional action is required.">Aged Accounts</option>
+
+<option value="[Scheduling Aged Cleanup Project] SO Voided #CODE, time in WIP State: CODE. Created new SO#CODE to clear it from the aged accounts. No additional action is required.">Aged Accounts</option>
 <option value="[Verse 1]
 Nagtanong ka pa, wala namang epekto
 Labas-pasok sa tenga mo kahit anong sabihin ko
@@ -1171,15 +1266,24 @@ We only need the paperwork DT#CODE, PU#CODE and the 60-month letter in OTL for O
 
 <option value="From: Raymond Tariao
 Phone: (484) 567-0666
-Fax: (484) 362-1480">Parachute SWO</option>
+Fax: (484) 362-1480
+
+Phone: 4845670666 
+Fax: 4843621480">Parachute SWO</option>
 
 <option value="From: Raymond Tariao
 Phone: (484) 567-0666
-Fax: (484) 362-1480">Parachute 6MWT</option>
+Fax: (484) 362-1480
+
+Phone: 4845670666 
+Fax: 4843621480">Parachute 6MWT</option>
 
 <option value="From: Raymond Tariao
 Phone: (484) 567-0666
-Fax: (484) 362-1480">Parachute Follow-up</option>
+Fax: (484) 362-1480
+
+Phone: 4845670666 
+Fax: 4843621480">Parachute Follow-up</option>
 
 
 
@@ -1316,7 +1420,7 @@ Thank you for calling. This is [Raymond] from Adapthealth and its family of comp
 * Let me check your account details to provide you with accurate information.
 
 Verification:
-May I have your name and date of birth to in order for me to pull up your account, please.
+May I have your last name and date of birth to in order for me to pull up your account, please.
 
 HIPAA Compliance:
 For security and HIPAA compliance, could you please confirm your date of birth before we proceed.
@@ -1328,7 +1432,7 @@ CHECKLIST
 - Upcoming appointments
 
 ------------------------------------------------------------------------------
-We sent that letter because we would like to inform you that we are working on your account.
+We sent that letter because we would like to inform you that we are working on your account and there are some documents that we need to obtain.
 
 Q#1: 
 We would Like to ask you if you want to continue with our services.
@@ -1344,7 +1448,11 @@ Can I have your doctor's information
 *ADDRESS
 
 Q#4:
-Do you have any upcoming appointments?">IB Call - Patient </option>
+Do you have any upcoming appointments?
+
+Q#5:
+When was your last appointment?
+">1.1 IB Call - Patient </option>
 
 <option value="Inbound Call Script - Adapthealth Representative
 
@@ -1356,14 +1464,324 @@ Q#1: May I have the patient ID and under what system?
 Q#2: May I have the patient name, date of birth of the patient and under what system? 
 
 HIPAA Compliance:
-For security and HIPAA compliance, could you please confirm your date of birth before we proceed.">IB Call - Adapthealth Representative</option>
+For security and HIPAA compliance, could you please confirm your date of birth before we proceed.">2. IB Call - Adapthealth Representative</option>
+
+<option value="QUALIFIED 6MWT
+The 6-Minute Walk Test measures how far you can walk in 6 minutes to assess your endurance and overall fitness. A qualifying result includes maintaining an oxygen saturation (SpO2) above 88% during the test. However, to qualify for oxygen therapy coverage by your insurance, the SpO2 must be 88% and below.
+
+DISQUALIFIED 6MWT
+Your 6MWT results did not meet the necessary criteria. This means we can't qualify you for oxygen therapy at this time. Please contact your doctor to discuss what steps should be taken next.">IB Call - 6MWT Question/s</option>
+
+<option value="QUALIFIED TSS
+To requalify for oxygen therapy based on your TSS, SpO2 needs to drop below 88% during the test. Additionally, your Apnea-Hypopnea Index (AHI) should be considered. The AHI measures the number of apneas (pauses in breathing) and hypopneas (shallow breaths) per hour of sleep. Please contact your sleep doctor to discuss your results and the next steps.
+
+DISQUALIFIED TSS
+Your titration sleep study did not meet the necessary criteria for qualification. This means that the results do not support the need for the prescribed therapy at this time, and we can't use this to requalify you for oxygen. Please contact your sleep doctor to discuss what should be done next.">IB Call - TSS Question/s</option>
+
+<option value="Main Fax: (484) 362-1480
+Alternate Fax#: (866) 503-8207
+">Fax number/s</option>
+
+<option value="Authorizations - [484] 362-2350
+Recert Team - [360] 940-5004
+Billing - [484] 398-6092
+Resupply Pap Patient - [844] 241-7153
+Insurance Change - [866] 502-2211
+Requalification - [844] 843-9140
+">Directory</option>
+
+<option value="We have been trying to reach the doctor's office regarding some important documents. Unfortunately, we haven't received any response from them. 
+
+As a result, your account has been converted to a purchase status. This means that we are unable to continue providing services under the previous terms until we receive the necessary documentation.
+
+Do you want to continue with our services?
+Can I have the name of your doctor and their phone number?
+Do you have upcoming appointment?
+How about the previous appointment?
+">CTP Letter - Missing Documents</option>
+
+<option value="5-YEAR RESET, please do not remove any items in the order.
+P#CODE. Contact them in advance and provide an ETA when calling.
+
+Switch their O2 and have the patient sign the [DT#CODE], [Pickup/Exchange#CODE], and the 60 Month Restart Letter in OTL for O2 5 Year RUL/Medicare Recertification. 
+
+This is required for insurance billing. If necessary, assist the patient in setting up Autopay. For any queries, please call 484-567-0666. 2 Liter- flow.">3. IB Call - Pick-up and exchange Scheduling</option>
+
+<option value="5-YEAR RESET, please do not remove any items in the order.
+P#CODE. Contact them in advance and provide an ETA when calling.
+
+RUL SIGNATURE ONLY NEEDED TO BILL INSURANCE, NO NEED TO SWAP O2. 
+
+Please have the patient sign the [DT#CODE], [Pickup/Exchange#CODE], and the 60 Month Restart Letter in OTL for O2 5 Year RUL/Medicare Recertification. 
+
+This is required for insurance billing. If necessary, assist the patient in setting up Autopay. For any queries, please call 484-567-0666. 2 Liter- flow.">4. IB Call - Signature Scheduling</option>
+
+<option value="Those Eyes
+Song by New West
+
+When we're out in a crowd, laughing loud
+And nobody knows why
+When we're lost at a club, getting drunk
+And you give me that smile
+Going home in the back of a car
+And your hand touches mine
+When we're done making love and you look up
+And give me those eyes
+
+'Cause all of the small things that you do
+Are what remind me why I fell for you
+And when we're apart and I'm missing you
+I close my eyes and all I see is you
+And the small things you do
+
+When you call me at night
+While you're out getting high with your friends
+(High with your friends)
+Every =hi=, every =bye=, every =I love you= you've ever said
+(You've ever said)
+
+'Cause all of the small things that you do
+Are what remind me why I fell for you
+And when we're apart and I'm missing you
+I close my eyes and all I see is you
+And the small things you do
+
+When we're done making love
+And you look up and give me those eyes
+
+'Cause all of the small things that you do
+Are what remind me why I fell for you
+And when we're apart and I'm missing you
+I close my eyes and all I see is you
+And the small things you do
+
+All the small things you do">Those eyes - Song by New West</option>
+
+
+
+<option value="MOUSE - IPLOYMS988">ASSET CODE</option>
+
+<option value="G-CONCENTRATOR & G-POC
+ 
+AA Medical
+AZ Phoenix - 106
+Bennet - Reno
+CA San Diego Verio - 63549
+CA San Jose - 55553
+PPS - Albuquerque
+PPS - Salem
+PPS - South San Francisco
+PPS - Tempe West
+Sound Oxygen - Auburn
+Sound Oxygen - Fife
+Sound Oxygen - Poulsbo
+Sound Oxygen - Spokane
+Sound Oxygen - Yakima
+WA Centralia - 63562
+WA Olympia Harrison - 63558
+Bennett - Sacramento
+zzzBennett - Idaho
+">PPS - G-CONCENTRATOR AND G-POC</option>
+
+<option value="Who Am I
+Song by Casting Crowns
+
+Who am I, that the Lord of all the earth would care to know my name?
+Would care to feel my hurt?
+
+Who am I, that the bright and morning star would choose to light the way
+For my ever wandering heart?
+Not because of who I am
+But because of what you've done
+Not because of what I've done
+But because of who you are
+
+I am a flower quickly fading
+Here today and gone tomorrow
+A wave tossed in the ocean (ocean)
+A vapor in the wind
+Still you hear me when I'm calling
+Lord, you catch me when I'm falling
+And you've told me who I am
+I am yours, I am yours
+
+Who am I, that the eyes that see my sin would look on me with love
+And watch me rise again
+Who am I, that the voice that calmed the sea would call out through the rain
+And calm the storm in me?
+
+Not because of who I am
+But because of what you've done
+Not because of what I've done
+But because of who you are
+
+I am a flower quickly fading
+Here today and gone tomorrow
+A wave tossed in the ocean (ocean)
+A vapor in the wind
+Still you hear me when I'm calling
+Lord, you catch me when I'm falling
+And you've told me who I am (I am)
+I am yours
+
+Not because of who I am
+But because of what you've done
+Not because of what I've done
+But because of who you are
+
+I am a flower quickly fading
+Here today and gone tomorrow
+A wave tossed in the ocean (ocean)
+A vapor in the wind
+Still you hear me when I'm calling
+Lord, you catch me when I'm falling
+And you've told me who I am (I am)
+I am yours
+
+I am yours
+I am yours
+
+Whom shall I fear?
+Whom shall I fear?
+'Cause I am yours
+I am yours">Lyrics - Who Am I
+Song by Casting Crowns</option>
+
+<option value="ADDENDUM EXAMPLE: 
+
+The current document contains incomplete testing information. Specifically, the patient's oxygen saturation (O2) levels were recorded as follows:
+
+ O2 is 92% and decreased to 76% on walking and needed 2LPM oxygen to improve to 92%.
+
+To ensure clarity and completeness, we need an addendum that includes these specific indications:
+
+1. Oxygen saturation on room air at rest: 92%
+2. Oxygen saturation on room air with exertion: 76%
+3. Oxygen saturation during ambulation with 2LPM oxygen: 92%
+
+Please note that we need this completed within 30 days from the appointment on 09/03/2024. If it is not done within this timeframe, we will require another test as per Medicare guidelines.
+">Addendum Needed</option>
+
+<option value="They will take care their own scheduling
+
+Family Medical - Cary NC
+Family Medical - Goldsboro NC
+NC Elizabeth City - 361
+AM - Medbridge - High Point NC
+">Walker, Rhoshanda</option>
+
+<option value="We regret to inform you that we are no longer servicing your area and you have to find another local oxygen provider that is near to your home to continue receiving the care you need.">No longer servicing the area</option>
+
+<option value="Hello Good day, Michael!
+
+We are working on the 5-Year Requalification, and I would like to inquire if you could assist a patient living at ADDRESS. We've tried reaching out multiple times but unsuccessful. I wonder if we can attempt to drive by, and forward this to dispatch for a technician to handle? Please let us know how should we proceed.
+
+Your attention to this matter would be greatly appreciated. Thank you and have a great day!
+">Drive by - NEED ASSISTANCE</option>
+
+<option value="•Beneficiary’s name or MBI
+•Order Date
+•General description of the item
+•Quantity to be dispensed, if applicable
+•Treating Practitioner Name or NPI
+•Treating Practitioner’s signature">SWO Requirements</option>
+
+<option value="Acceptable Electronic Signature Examples
+. Chart Accepted by with provider's name
+. Electronically signed by with provider's name
+. Verified by with provider's name
+. Reviewed by with provider's name
+. Released by with provider's name
+. Signed by with provider's name
+. Signed before import by with provider's name
+. Signed: John Smith, M.D. with provider's name
+· Digitized signature: Handwritten and scanned into the computer
+. This is an electronically verified report by John Smith, M.D.
+. Authenticated by John Smith, M.D.
+· Authorized by: John Smith, M.D.
+· Digital signature: John Smith, M.D.
+. Confirmed by with provider's name
+. Closed by with provider's name
+. Finalized by with provider's name
+. Electronically approved by with provider's name
+. Signature derived from controlled access password">Acceptable Electronic Signature Examples</option>
+
+<option value="UPDATE
+
+Update by Damaris 10/09/2024 Around 1:51PM
+This was brought up because there have been agents disqualifying testing because of the signature not being same date as it was done.  I felt it was important to bring up to Everyone  
+Some agents know this information but from the messages its obvious some agents had some questions and/or confusion. 
+ 
+Never be afraid to ask a question even if its something you think you should know.  Its perfectly ok to ask.  
+
+-------------------------------------------------------------------------------
+Update by Damaris 10/09/2024 Around 1:48PM
+The testing has to be signed within 30 days of being done.  For older testing this will prob be a little harder just because the paperwork is sometimes not on file etc.  
+ 
+This is not new .. testing has always had to be signed within 30 days .. same goes for notes.  
+If they are not signed within 30 days that is when we ask for an addendum (only on current testing / notes).
+Anything old we will probably not be able to use just due to how old they are.  
+
+-------------------------------------------------------------------------------
+Update by Damaris 10/09/2024 Around 1:32PM
+The testing is good and can be used.  I brought this example up after Kari and I reviewed testing for a patient.  
+I can see why some are confused.
+ 
+The testing date and encounter are the same ... The signed date was several days later.
+This is what is confusing some.
+ 
+Remember you can accept the signature date if its within 30 days of the testing being done. 
+
+Aerocare
+Kozlowski, David M
+Patient ID 5084467
+DOB 11/05/1951
+
+">UPDATE FROM LEADS</option>
+
+<option value="UPDATE RELATED TO CYLINDER
+
+Good afternoon,
+
+This patient's account was processed for a new five-year RUL. We would like to make a request of the restart team to please
+utilize our zip code tool when working on restart orders to determine if we can still service the patient.
+
+If the 'delivery day' on the tool states Existing Patients Only, we ask that new restarts not be processed, but instead be
+transferred to a local supplier to service. For these locations, we do not feel we can provide timely service to these patients
+since they reside outside of our servicing area and will have their needs more adequately met by a supplier that can provide
+faster service.
+
+We will be transitioning this patient to Lincare/Preferred. Our team has reached out to him to discuss and inform. We apologize
+for the inconvenience and appreciate your understanding and cooperation with this request.
+
+Please let us know if you have any questions or concerns. A link to the zip code tool is provided below.
+Adapt Cylinder Delivery File (caspio.com)">Cylinder Update</option>
+
+<option value="Hi Karen, Good day!
+
+I hope this message finds you well.
+
+We would like to inquire if you could assist a patient living at CODE, USA. We are working on the 5-year requalification for this account, but there is no information in the cylinder tool if you still process for restart on this area. We would like to confirm first before we proceed with the restart.
+
+Your prompt attention to this matter would be greatly appreciated.
+
+Thank you and have a great day!">Cylinder Email - No Information</option>
 
 <option value="ZZZCODE">ZZZCODE</option>
-
+<option value="ZZZCODE">ZZZCODE</option>
+<option value="ZZZCODE">ZZZCODE</option>
+<option value="ZZZCODE">ZZZCODE</option>
+<option value="ZZZCODE">ZZZCODE</option>
+<option value="ZZZCODE">ZZZCODE</option>
+<option value="ZZZCODE">ZZZCODE</option>
+<option value="ZZZCODE">ZZZCODE</option>
 <option value="ZZZCODE">ZZZCODE</option>
 
-<option value="ZZZCODE">ZZZCODE</option>
+
+
     </select>
+
+
 
 <br><br>
         <textarea id="selectedOption" placeholder="Selected option will appear here..." style="color: white;"></textarea>
@@ -1377,10 +1795,9 @@ For security and HIPAA compliance, could you please confirm your date of birth b
 
 
 
+"Delivery today with ETA": "[Scheduling] Insurance is eligible. Sales order and Pickup/Exchange have been updated. Delivery is scheduled for today, 10/11/2024, and will be managed by NAME. With ETA TIME.",
 
-"Delivery today with ETA": "[Scheduling] Insurance is eligible. Sales order and Pickup/Exchange have been updated. Delivery is scheduled for today, 9/18/2024, and will be managed by NAME. With ETA TIME.",
-
-"Delivery today, no ETA": "[Scheduling] Insurance is eligible. Sales order and Pickup/Exchange have been updated. Delivery is scheduled for today, 9/18/2024, and will be managed by NAME. No ETA is available.",
+"Delivery today, no ETA": "[Scheduling] Insurance is eligible. Sales order and Pickup/Exchange have been updated. Delivery is scheduled for today, 10/11/2024, and will be managed by NAME. No ETA is available.",
 
 "Swap out - Patient called in": "[Scheduling] Transferred call, spoke with patient and scheduled for DATE, sent to dispatch.",
 
@@ -1399,16 +1816,16 @@ For security and HIPAA compliance, could you please confirm your date of birth b
 
 "Scheduled for delivery": "[Scheduling-Attempt/s#1] Insurance is eligible, contacted the patient at CODE, verified their current address and phone number for a callback, and arranged their pick-up and delivery for CODE, sent to dispatch.",
 
-"Account is on hold": "Hello NAME, Good day! We are currently working on the 5-year requalification on this account, and this is good for scheduling, however there's a hold on the account. I just want to ask if we can complete the set up for 5-year requalification or we send this account to branch review so you can check the hold on the account? Your attention to this matter would be greatly appreciated. Hope you can look into this. Thanks ahead!",
+"Account is on hold": "[Scheduling] The account is on hold, sent an email to CODE, will update once got a response from them.",
   
 
 "Blind delivery - Unsuccessful attempts": "[Scheduling-Attempt/s#3] We have made several attempts to contact the patient without success. Set them up for blind delivery DATE.",
 
-"Blind delivery - Scheduled for drive by": "[Scheduling] Insurance is eligible. Sales order and Pickup/Exchange have been updated. Scheduled for drive by today, 9/18/2024, and will be managed by NAME. No ETA is available.",
+"Blind delivery - Scheduled for drive by": "[Scheduling] Insurance is eligible. Sales order and Pickup/Exchange have been updated. Scheduled for drive by today, 10/11/2024, and will be managed by NAME. No ETA is available.",
 
 "Too soon to schedule": "Upon reviewing the account, I noticed that the delivery is scheduled for today; however, the 5-year restart is not due until 8/1/2024. Could we arrange for the delivery on or after 8/1/2024? This would ensure the dates are accurate and to avoid the need for a second visit to the patient's home for signing the same document.",
 
-"Not For US": "[Scheduling] We’ve been notified that our services for scheduling patients at NAME branch will no longer be required. Moving forward, this local branch will manage their own scheduling.",
+"Not For US": "[Scheduling] We've been informed that our scheduling services for patients at BRANCH will no longer be needed, as this branch will now handle their own scheduling.",
 
 
 
@@ -1427,6 +1844,7 @@ For security and HIPAA compliance, could you please confirm your date of birth b
 
 "USAGE": "2LPM Via NC At rest, 2LPM Via NC with exertion",
 
+"Drive by - NEED ASSISTANCE": "We've tried reaching out multiple times but the patient didn't answer our calls or even return our call, sent email to local branch to ask for assistance",
 
 
 "Parachute 6MWT": "Good day! Patient is due for 5-year O2 requalification. Requesting a copy of a qualifying 6-minute walk test from any year to be used in requalifying patient. For questions, you may call 484-567-0666. Thank you!",
@@ -1442,21 +1860,29 @@ For security and HIPAA compliance, could you please confirm your date of birth b
 
 "Needs new insurance information": "This is not for 60MC, flipped to needs new insurance information.",
 
+"Walker, Rhoshanda": "[Scheduling] SO#NUMBER is being handled by CODE and assigned to CSR, Highpoint for completion.",
+
+".3.4 - Need Prior Authorization": "[Prior Auh is needed]",
+
+"1.1 IB Call - Patient": "Inbound call from NAME [PHONE] regarding the",
+
+"2. IB Call - Adapthealth Representative": "The representative contacted us at [NUMBER] regarding what we need from them. I explained the requirements we need,",
 
 
+"CTP Letter - Missing Documents": "IBC from NAME [PHONE] regarding the CTP letter that he/she received. Explained to him/her what happened and what's needed to be done. Confirmed election,",
+
+"3. IB Call - Pick-up and exchange Scheduling": "IBC from NAME [CODE] regarding the VM she received. I explained the 5-Year Requalification process and asked if they preferred to keep their current equipment or have it replaced. They wanted a replacement. I verified their current address and phone number for a callback, arranged the pick-up and delivery for DATE, and sent the details to dispatch.",
 
 
+"4. IB Call - Signature Scheduling": "IBC from NAME [CODE] regarding the VM she received. I explained the 5-Year Requalification process and asked if she wanted to keep the current equipment or have it replaced. She opted for a replacement. I verified her current address and phone number for a callback, arranged the pick-up and delivery for DATE, and sent the details to dispatch.",
 
 
-
-
-
-
-
+"Cylinder Email - No Information": "[Scheduling] This account is under PPS area and there is no information in the AdaptHealth Cylinder Delivery Tool, sent email to CODE to confirm if they will still service this area of the patient.",
 
 
             "Mountains": "Mountains are formed through tectonic forces or volcanism. They are home to unique ecosystems and are often considered sacred in various cultures. Mountains also attract tourists and adventurers for activities like hiking, climbing, and skiing."
         };
+
 
         function updateTextareas() {
             const dropdown = document.getElementById('dropdown');
