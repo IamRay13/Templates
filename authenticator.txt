@@ -1,0 +1,1 @@
+otpauth://totp/AdaptHealthraymond.tariao%40adapthealth.com:?secret=7zs6qdy27llyqhxf&issuer=AdaptHealthraymond.tariao%40adapthealth.com
