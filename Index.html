@@ -598,9 +598,9 @@ SALES ORDER: CODE
 BT DATABASE: STLukes/OHH/Aerocare">Rekey</option>
 
  <option value="What’s needed: 
+
 | Item/s: E1390 &
 | RUL Date: 
-| CMN Expiration: 
 
 | Doctor call: 0/5
 | GoScripts: 0/2
@@ -621,11 +621,16 @@ BT DATABASE: STLukes/OHH/Aerocare">Rekey</option>
 | Phone Number: 
 | Fax Number: 
 
-| Testing: Initial O2 from DATE, 6MWT - RAAR CODE%, RAEx CODE%, Exertion with 2LPM oxygen CODE%.
+| Patient Evaluation/Test Results:
+- Room air at rest: CODE%
+- Room air during exertion: CODE%
+- SpO2 while wearing 02 at 2LPM with exertion: CODE%
+| Diagnoses: 
 | Usage: 2LPM Oxygen via NC Continuous/Nocturnal
 | Can SWO be used: Yes No
 
-| Remark/s: We got valid testing. Created CMN - CODE. The provider is enrolled with parachute, created order and sent it through. Retained SB.">Template</option>
+| Remark/s: We have valid testing, updated the clinical tab, and moved the testing to the OXRUL lists, but we cannot send the request for SWO/CMN until DATE, flipped SB to Election pending Q.
+">Template</option>
 
  <option value="[Scheduling] An error occurred [ERROR], updated it. We received the delivery and pickup tickets, and the patient signed the 60-month letter. Flipped back WIP State to .4.0 for auto-confirm review.">.4.1 - Autoconfirm Pushback</option>
  <option value="[Scheduling] Scheduling for AdaptHealth - Minnesota - Westgate is being handled by Fennell, Kirstin.
@@ -725,28 +730,19 @@ Set up PT for Autopay if needed. Call 484-567-0666 with questions. 2 Liter-flow.
  <option value="This patient is currently being reviewed by the Centralized RUL team.  If the patient calls in with any questions please transfer them to (484) 567-0666 or Purecloud call queue MedicareRestarts_adapthealth.  You can also email this team, 60monthrestarts@adapthealth.com for a status update.  
 
 Patient has had Oxygen equipment for 60 months. If patient elects to not restart all oxygen equipment will need to be picked up and the patient will have to switch providers.  
-************************************************* PAST DUE ********************************************************
-Assessment Team Review:  Q
+****************************************** PAST DUE **************************************************
+Assessment Team Review: Q
 
 Does the insurance cap?
 
 Testing type: 6MWT
 Date Testing was completed: CODE
 Patient Evaluation/Test Results:
-Step 1: Patient SpO2 on room air at rest: CODE%
-Step 2: Patient SpO2 on room air during exertion: CODE%
-Step 3: Patient SpO2 while wearing 02 at 2LPM with exertion CODE%
-    
-Comments:  
+Patient SpO2 on room air at rest: CODE%
+Patient SpO2 on room air during exertion: CODE%
+Patient SpO2 while wearing 02 at 2LPM with exertion CODE%
 
-
-VERIFY  
-
-Type of Usage (24hrs/ nocturnal only/ ambulation):    
-
-Current ordering doctor: 
-
-Most recent/upcoming appt date to discuss O2 usage:   
+---------------------------------
 
 Sam/Sim Results- 
 
@@ -754,17 +750,6 @@ E1390:
 
 Portability: 
 
-Pap: 
-
-Final Review- 
-
-Was a new initial CMN created? Y/N 
-
-Was the Clinical tab completed?
-
-What is needed?
-
- 
 ">First Touch</option>
  <option value="Good day,
 
@@ -1681,11 +1666,10 @@ FYI Everyone" style="color: white;"></textarea>
 
 ".3 - Voicemail": "[Scheduling-Attempt/s#3] Contacted the patient at CODE, still routed to voicemail, left a voice message for follow-up.",
 
- "First Touch": "What’s needed: \n\n| Item/s: E1390 &\n| RUL Date: \n| CMN Expiration: \n\n| Doctor call: 0/5\n| GoScripts: 0/2\n| Parachute: 0/2\n| Patient Call: 0/3\n| Faxes sent: 0/5\n\n| Insurance: \n| Policy Number: \n| Checked Eligibility: Yes No\n| DNC/DNF: Yes No\n| GoScripts: Yes No\n| Parachute: Yes No\n\n| Doctor: \n(PECOS)\n| NPI: \n| Phone Number: \n| Fax Number: \n\n| Patient Evaluation/Test Results:\nStep 1: Patient SpO2 on room air at rest: CODE%\nStep 2: Patient SpO2 on room air during exertion: CODE%\nStep 3: Patient SpO2 while wearing 02 at 2LPM with exertion: CODE%\n| Diagnoses: \n| Usage: 2LPM Oxygen via NC Continuous/Nocturnal\n| Can SWO be used: Yes No\n\n| Remark/s: We got valid testing. Created CMN - CODE. The provider is enrolled with parachute, created order and sent it through. Retained SB.",
+ "First Touch": "What’s needed: \n\n|Item/s: E1390&\n|RUL Date:\n\n|Doctor call: 0/5\n|GoScripts: 0/2\n|Parachute: 0/2\n|Patient Call: 0/3\n|Faxes sent: 0/5\n\n|Insurance:\n|Policy Number:\n|Checked Eligibility: Yes No\n|DNC/DNF: Yes No\n|GoScripts: Yes No\n|Parachute: Yes No\n\n|Doctor:\n(PECOS)\n|NPI:\n|Phone Number:\n|Fax Number:\n\n|Patient Evaluation/Test Results:\n-Room air at rest: CODE%\n-Room air during exertion: CODE%\n-SpO2 while wearing 02 at 2LPM with exertion: CODE%\n|Diagnoses:\n|Usage: 2LPM Oxygen via NC Continuous/Nocturnal\n|Can SWO be used: Yes No\n\n|Remark/s: We have valid testing, updated the clinical tab, and moved the testing to the OXRUL lists, but we cannot send the request for SWO/CMN until [DATE]. Flipped SB to Election pending Q.",
 
 "ARP BRANCH REVIEW": "We called the patient multiple times to set up the pick-up and exchange but were unsuccessful. That's why we tried to drive by, but we still failed due to no contact with the patient. We are now putting SO#27943707 to x6 Void Order and moving it to Branch Review to process CTP.",
   
-
 "Sent to scheduling - Medicare": "5-YR RUL is not due until the DATE. Please do not schedule it until then.\n\n2LPM via NC Continuous / 60Month Restart\n---------------------------------------------------------------------------------\nPlease have patient sign 60-month letter when completing exchange/restart located in OTL.\n---------------------------------------------------------------------------------\nCLAIM NOTE\n\nRUL MET E1390 INITIAL 05032019\n---------------------------------------------------------------------------------\nCSR, Scheduling\n---------------------------------------------------------------------------------\n\nBL-E1390-5LPM\nBL-K0738\nBL-E1392\nOXY PORTABILITY\nBL-E0443\n\n2LPM Oxygen Via NC At rest\n2LPM Oxygen Via NC with exertion",
 
 
