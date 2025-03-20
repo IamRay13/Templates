@@ -99,7 +99,10 @@ image-align: left;
 }
 
 
-    </style>
+ </style>
+    <script src="wallpaper.js"></script> <!-- Link to the external JavaScript file -->
+<link rel="stylesheet" href="style.css">
+</head>
     <script>
         window.onload = function() {
             var select = document.getElementById("dropdown");
@@ -135,7 +138,8 @@ image-align: left;
 
 
     <select id="dropdown" onchange="updateTextareas()">
-<option value="Please note anything here....">60MC Restart Note</option>
+
+   <option value="Please note anything here....">60MC Restart Note</option>
       <option value="Hi! This is Raymond from AdaptHealth and its family of companies on a recorded line.
 
 [Voicemail]
@@ -1806,6 +1810,14 @@ Thank you, we might be calling you back tomorrow if we have not received it yet 
 
 
 
+
+
+
+
+    </select>
+
+
+
 <br><br>
         <textarea id="selectedOption" placeholder="UPDATE MEETING 2/13/2025:
  
@@ -1821,6 +1833,8 @@ FYI Everyone" style="color: white;"></textarea>
     <script>
         const additionalInfoMap = {
         
+
+    
 
 "Voicemail": "[Scheduling-Attempt/s#1] Insurance is eligible, contacted the patient at CODE, routed to VM. LVM.",
 
@@ -1910,7 +1924,6 @@ FYI Everyone" style="color: white;"></textarea>
 
             "Mountains": "Mountains are formed through tectonic forces or volcanism. They are home to unique ecosystems and are often considered sacred in various cultures. Mountains also attract tourists and adventurers for activities like hiking, climbing, and skiing."
         };
-
 
         function updateTextareas() {
             const dropdown = document.getElementById('dropdown');
